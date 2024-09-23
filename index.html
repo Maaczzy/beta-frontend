@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Lead Submission Form</h2>
+    <form id="leadForm">
+        <label for="name">Име:</label>
+        <input type="text" id="name" name="name" placeholder="Вашето име" required>
+
+        <label for="email">Е-пошта:</label>
+        <input type="email" id="email" name="email" placeholder="Вашата е-пошта" required>
+
+        <label for="serviceType">Тип на услуга:</label>
+        <select id="serviceType" name="serviceType" required>
+            <option value="Изработка на веб-страница">Изработка на веб-страница</option>
+            <option value="Социјален маркетинг">Социјален маркетинг</option>
+            <option value="Графички дизајн">Графички дизајн</option>
+        </select>
+
+        <label for="budgetRange">Буџет:</label>
+        <select id="budgetRange" name="budgetRange" required>
+            <option value="300-500 евра">300-500 евра</option>
+            <option value="500-1000 евра">500-1000 евра</option>
+            <option value="1000+ евра">1000+ евра</option>
+        </select>
+
+        <button type="submit">Испрати</button>
+
+        <p class="message" id="message"></p>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
